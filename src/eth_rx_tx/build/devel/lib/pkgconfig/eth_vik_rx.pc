@@ -1,0 +1,8 @@
+prefix=/home/anton202/vik_ws/src/eth_vik_rx/build/devel
+
+Name: eth_vik_rx
+Description: Description of eth_vik_rx
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

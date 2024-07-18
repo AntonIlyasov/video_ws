@@ -1,0 +1,11 @@
+# Set up your streams to rtsp here.
+port: "8554"
+streams: # Cannot rename - must leave this as is.
+
+  stream2:
+    type: topic  # topic - Image is sourced from a sensor_msgs::Image topic
+    source: /usb_cam/image_raw  # The ROS topic to subscribe to
+    mountpoint: /back      
+    caps: video/x-raw,framerate=10/1,width=640,height=480 
+    bitrate: 500
+
